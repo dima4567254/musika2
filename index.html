@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musika</title>
+    <link type="image/x-icon" href="images/logo.png" rel="shortcut icon">
+    <link type="Image/x-icon" href="images/logo.png" rel="icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <!--
+    недоработки
+   * 1 дотсы у слайдера
+    +2 выпадающие меню
+    +4 прописать что бы не ломались строчки
+    6 перевести на русский
+    *7 сделать артиклы
+    8 проверить все мелочи 
+    9 разобратся с декором посмотреть как у чувака 
+    
+-->
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a class="menu__logo-link" href="#">
+                    <img class="menu__logo logo" src="images/logo.png" alt="logo">
+                </a>
+                <button class="menu__btn" type="button">
+                    <span></span>
+                    <span class="sr-only">open menu</span>
+                </button>
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--active" href="#scroll-top">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#service">
+                            Service
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#collections">
+                            Collections
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#products">
+                            products
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#about">
+                            about
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="#blog">
+                            blog
+                        </a>
+                    </li>
+                </ul>
+                <div class="menu__nav">
+                    <div class="dropdown">
+                        <select class="dropdown__select">
+                            <option class="dropdown__optoon dropdown-svg" value="1" name="email">1
+                            </option>
+                            <option class="dropdown__optoon" value="0" name="email">2</option>
+                        </select>
+                    </div>
+                    <button class="button button--cart" type="button">
+                        <svg class="button__svg" xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                            viewBox="0 0 18.94 16.969">
+                            <path class="cls-1" fill='#243f4d' fill-rule='evenodd'
+                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                transform="translate(-1716 -69)" />
+                        </svg>
+                        <span class="sr-only">button cart</span>
+                    </button>
+                    <span class="sr-only">cart</span>
+                    <button class="button  button--search" type="button">
+                        <svg class="button__svg" xmlns="http://www.w3.org/2000/svg" width="15" height="16"
+                            viewBox="0 0 15 16" font-size='16px' opacity='0.8' fill='#212121' font-family='FontAwesome'>
+                            <text id="search" class="cls-1" x="-0.112" y="13.072"></text>
+                        </svg>
+                        <span class="sr-only">button search</span>
+                    </button>
+                    <span class="sr-only">search</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="home" id="scroll-top">
+            <h1 class="sr-only">musical instruments sale website</h1>
+            <ul class="home__slider">
+                <li class="home__item">
+                    <div class="home__inner">
+                        <div class="home__content">
+                            <div class="home__text">
+                                Tune your melody <br>
+                                that all may perceive.
+                            </div>
+                            <button class="home__button btn" type="button">
+                                view collection
+                            </button>
+                            <a href="#scroll-up">
+                                <img class="home__image" src="images/scroll-up.png" alt="Scroll Up">
+                            </a>
+                        </div>
+                        <img class="home__img" src="images/guitar.png" alt="guitar">
+                    </div>
+                </li>
+                <li class="home__item">
+                    <div class="home__inner">
+                        <div class="home__content">
+                            <div class="home__text">
+                                Tune your melody <br>
+                                that all may perceive.
+                            </div>
+                            <button class="home__button btn" type="button">
+                                view collection
+                            </button>
+                            <a href="#scroll-up">
+                                <img class="home__image" src="images/scroll-up.png" alt="Scroll Up">
+                            </a>
+                        </div>
+                        <img class="home__img" src="images/guitar.png" alt="guitar">
+                    </div>
+                </li>
+
+                <li class="home__item">
+                    <div class="home__inner">
+                        <div class="home__content">
+                            <div class="home__text">
+                                Tune your melody <br>
+                                that all may perceive.
+                            </div>
+
+                            <button class="home__button btn" type="button">
+                                view collection
+                            </button>
+                            <a href="#scroll-up">
+                                <img class="home__image" src="images/scroll-up.png" alt="Scroll Up">
+                            </a>
+                        </div>
+                        <img class="home__img" src="images/guitar.png" alt="guitar">
+                    </div>
+                </li>
+
+                <li class="home__item">
+                    <div class="home__inner">
+                        <div class="home__content">
+                            <div class="home__text">
+                                Tune your melody <br>
+                                that all may perceive.
+                            </div>
+                            <button class="home__button btn" type="button">
+                                view collection
+                            </button>
+                            <a href="#scroll-up">
+                                <img class="home__image" src="images/scroll-up.png" alt="Scroll Up">
+                            </a>
+                        </div>
+                        <img class="home__img" src="images/guitar.png" alt="guitar">
+                    </div>
+                </li>
+
+                <li class="home__item">
+                    <div class="home__inner">
+                        <div class="home__content">
+                            <div class="home__text">
+                                Tune your melody <br>
+                                that all may perceive.
+                            </div>
+
+                            <button class="home__button btn" type="button">
+                                view collection
+                            </button>
+                            <a href="#scroll-up">
+                                <img class="home__image" src="images/scroll-up.png" alt="Scroll Up">
+                            </a>
+                        </div>
+                        <img class="home__img" src="images/guitar.png" alt="guitar">
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="service" id="service">
+            <div class="container">
+                <h2 class="service__title title">Service</h2>
+                <div class="service__text">
+                    <span>
+                        the strange saga
+                        of gibson’s multi-col
+                    </span>
+                    <p>
+                        The story of the Firebird cannot be told with completeness without looking back just a few
+                        years
+                        before its
+                        inception. Step into the blue phoS-335 (the world’s first pro- duction thin-line semi hollow),
+                        and
+                        if
+                        that’s not
+                        enough, add the Ke ultimate obscurity the “Gumby-shaped” Gibson Moderne, here.
+                    </p>
+                </div>
+                <button class="service__btn btn" type="button">
+                    read more
+                </button>
+            </div>
+        </section>
+
+        <section class="collections" id="collections">
+            <div class="container">
+                <h2 class="collections__title title">
+                    Featured Collections
+                </h2>
+                <div class="collections__inner">
+                    <div class="collections__left">
+                        <div class="collections__item collections__item--big">
+                            <div class="collections__content">
+                                <h3 class="collections__subtitle">
+                                    Acoustic Guitar
+                                </h3>
+                                <button class="collections__button btn" type="button">
+                                    View Gallery
+                                </button>
+                            </div>
+                            <img src="images/collections/guitar1.png" alt="Acoustic Guitar">
+                        </div>
+                        <div class="collections__item collections__item--small">
+                            <div class="collections__content">
+                                <h3 class="collections__subtitle">
+                                    Nylon Guitar
+                                </h3>
+                                <button class="collections__button btn" type="button">
+                                    View
+                                    Gallery
+                                </button>
+                            </div>
+                            <img src="images/collections/guitar2.png" alt="Nylon Guitar">
+                        </div>
+                    </div>
+                    <div class="collections__right">
+                        <div class="collections__item collections__item--small">
+                            <div class="collections__content ">
+                                <h3 class="collections__subtitle">
+                                    Electric Guitar
+                                </h3>
+                                <button class="collections__button btn" type="button">
+                                    View
+                                    Gallery
+                                </button>
+                            </div>
+                            <img src="images/collections/guitar3.png" alt="Electric Guitar">
+                        </div>
+                        <div class="collections__item collections__item--big ">
+                            <div class="collections__content collections__content--twelve">
+                                <h3 class="collections__subtitle">
+                                    Twelve-String Guitar
+                                </h3>
+                                <button class="collections__button btn" type="button">
+                                    View
+                                    Gallery
+                                </button>
+                            </div>
+                            <img src="images/collections/guitar4.png" alt="Twelve-String Guitar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <div class="container">
+                <h2 class="products__title title">
+                    Popular Products
+                </h2>
+                <ul class="products__items">
+                    <li class="products__item">
+                        <img class="products__images" src="images/products/guitar1.png" alt="Nylon Guitar">
+                        <div class="products__wraper">
+                            <div class="products__inner">
+                                <div class="products__content">
+                                    <h3 class="products__subtitle">Nylon Guitar</h3>
+                                    <div class="products__prise">
+                                        <span>$</span>
+                                        150
+                                    </div>
+                                    <button class="products__button" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                            viewBox="0 0 17.87 15.531">
+                                            <path fill='#243f4d' fill-rule='evenodd'
+                                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                transform="translate(-1639.97 -70.719)" />
+                                        </svg>
+                                        <span class="sr-only">favorites</span>
+                                    </button>
+                                    <span class="sr-only">button favorites</span>
+                                    <button class="products__button" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                            viewBox="0 0 18.94 16.969">
+                                            <path class="cls-1" fill='#243f4d' fill-rule='evenodd'
+                                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                transform="translate(-1716 -69)" />
+                                        </svg>
+                                        <span class="sr-only">button cart</span>
+                                    </button>
+                                    <span class="sr-only">cart</span>
+                                </div>
+                                <img class="products__img" src="images/products/guitar1.png" alt="Nylon Guitar">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__images" src="images/products/guitar2.png" alt="Nylon Guitar">
+                        <div class="products__wraper">
+                            <div class="products__inner">
+                                <div class="products__content">
+                                    <h3 class="products__subtitle">Nylon Guitar</h3>
+                                    <div class="products__prise">
+                                        <span>$</span>
+                                        150
+                                    </div>
+                                    <button class="products__button " type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                            viewBox="0 0 17.87 15.531">
+                                            <path fill='#243f4d' fill-rule='evenodd'
+                                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                transform="translate(-1639.97 -70.719)" />
+                                        </svg>
+                                        <span class="sr-only">favorites</span>
+                                    </button>
+                                    <span class="sr-only">button favorites</span>
+                                    <button class="products__button" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                            viewBox="0 0 18.94 16.969">
+                                            <path class="cls-1" fill='#243f4d' fill-rule='evenodd'
+                                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                transform="translate(-1716 -69)" />
+                                        </svg>
+                                        <span class="sr-only">cart</span>
+                                    </button>
+                                    <span class="sr-only">button cart</span>
+                                </div>
+                                <img class="products__img" src="images/products/guitar2.png" alt="Nylon Guitar">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__images" src="images/products/guitar3.png" alt="Nylon Guitar">
+                        <div class="products__wraper">
+                            <div class="products__inner">
+                                <div class="products__content">
+                                    <h3 class="products__subtitle">Nylon Guitar</h3>
+                                    <div class="products__prise">
+                                        <span>$</span>
+                                        150
+                                    </div>
+                                    <button class="products__button " type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                            viewBox="0 0 17.87 15.531">
+                                            <path fill='#243f4d' fill-rule='evenodd'
+                                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                transform="translate(-1639.97 -70.719)" />
+                                        </svg>
+                                        <span class="sr-only">favorites</span>
+                                    </button>
+                                    <span class="sr-only">button favorites</span>
+                                    <button class="products__button" type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                            viewBox="0 0 18.94 16.969">
+                                            <path class="cls-1" fill='#243f4d' fill-rule='evenodd'
+                                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                transform="translate(-1716 -69)" />
+                                        </svg>
+                                        <span class="sr-only">button cart</span>
+                                    </button>
+                                    <span class="sr-only">cart</span>
+                                </div>
+                                <img class="products__img" src="images/products/guitar3.png" alt="Nylon Guitar">
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        <img class="products__images" src="images/products/guitar4.png" alt="Nylon Guitar">
+                        <div class="products__wraper">
+                            <div class="products__inner">
+                                <div class="products__content">
+                                    <h3 class="products__subtitle">Nylon Guitar</h3>
+                                    <div class="products__prise">
+                                        <span>$</span>
+                                        150
+                                    </div>
+                                    <button class="products__button " type="button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17.87" height="15.531"
+                                            viewBox="0 0 17.87 15.531">
+                                            <path fill='#243f4d' fill-rule='evenodd'
+                                                d="M1648.91,86.245a0.731,0.731,0,0,1-.28-0.056c-0.35-.15-8.65-3.749-8.65-10.76a28.181,28.181,0,0,0,13.05-4.707,4.817,4.817,0,0,1,4.81,4.684c0,7.034-8.29,10.634-8.65,10.783A0.7,0.7,0,0,1,1648.91,86.245Zm-4.11-14.138a3.427,3.427,0,0,0-3.41,3.346c0,5.407,6.13,8.662,7.52,9.334,1.4-.672,7.52-3.93,7.52-9.358a3.406,3.406,0,0,0-6.81.024,0.709,0.709,0,0,1-.71.669h0a0.694,0.694,0,0,1-.7-0.669A3.427,3.427,0,0,0,1644.8,72.106Z"
+                                                transform="translate(-1639.97 -70.719)" />
+                                        </svg>
+                                        <span class="sr-only"> favorites</span>
+                                    </button>
+                                    <span class="sr-only">button favorites</span>
+                                    <button class="products__button" type="button">
+                                        <span class="sr-only">button cart</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18.94" height="16.969"
+                                            viewBox="0 0 18.94 16.969">
+                                            <path class="cls-1" fill='#243f4d' fill-rule='evenodd'
+                                                d="M1721.53,85.978a2.073,2.073,0,1,1,0-4.147h0a2.056,2.056,0,0,1,1.46.6,2.03,2.03,0,0,1,.61,1.466A2.071,2.071,0,0,1,1721.53,85.978Zm0-2.963h0a0.889,0.889,0,1,0,.34,1.71,0.9,0.9,0,0,0,.55-0.824,0.92,0.92,0,0,0-.26-0.629A0.9,0.9,0,0,0,1721.53,83.015Zm8.39,2.963a2.045,2.045,0,0,1-1.46-.607,2.068,2.068,0,0,1,1.46-3.54h0a1.953,1.953,0,0,1,1.47.6,2.085,2.085,0,0,1-.67,3.383A2.093,2.093,0,0,1,1729.92,85.978Zm0-2.963h0a0.978,0.978,0,0,0-.82.548,0.887,0.887,0,0,0,1.16,1.161,0.891,0.891,0,0,0,.29-1.452A0.9,0.9,0,0,0,1729.92,83.015Zm-11.27.164a0.562,0.562,0,0,1-.25-0.056,0.59,0.59,0,0,1-.29-0.787,3.686,3.686,0,0,1,3.05-2.151l-1.05-5.391a0.591,0.591,0,1,1,1.16-.228l1.09,5.578h9.43l1.8-6.771h-13.3a4.346,4.346,0,0,1-4.28-3.693,0.587,0.587,0,0,1,.49-0.673,0.6,0.6,0,0,1,.68.5,3.159,3.159,0,0,0,3.11,2.682h14.07a0.582,0.582,0,0,1,.47.232,0.594,0.594,0,0,1,.11.513l-2.13,7.956a0.59,0.59,0,0,1-.57.44h-10.36a0.03,0.03,0,0,0-.02,0,2.66,2.66,0,0,0-2.68,1.51A0.586,0.586,0,0,1,1718.65,83.178Z"
+                                                transform="translate(-1716 -69)" />
+                                        </svg>
+                                        <span class="sr-only">cart</span>
+                                    </button>
+                                    <span class="sr-only">button cart</span>
+                                </div>
+                                <img class="products__img" src="images/products/guitar4.png" alt="Nylon Guitar">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="products__btn btn" type="button">more products</button>
+            </div>
+
+            <a class="video" data-fancybox style="background-image: url('images/video-bg.jpg')"
+                href="https://www.youtube.com/watch?v=Y2vZlSbw3iA">
+                <span class="sr-only">play video</span>
+            </a>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="about__title title">About Us</h2>
+                <div class="about__text">
+                    <span>
+                        the strange saga
+                        of gibson’s multi-col
+                    </span>
+                    <p>
+                        The story of the Firebird cannot be told with completeness without looking back just a few
+                        years before its inception. Step into the blue phoS-335 (the world’s first production
+                        thin-line semi hollow), and if that’s not enough, add the Ke ultimate obscurity the
+                        “Gumby-shaped” Gibson Moderne, here.
+                    </p>
+                </div>
+                <button class="about__btn btn" type="button">
+                    read more
+                </button>
+            </div>
+        </section>
+
+        <section class="blog" id="blog">
+            <div class="container">
+                <h2 class="blog__title title">Blog</h2>
+                <div class="blog__inner">
+                    <div class="blog__item">
+                        <img class="blog__img" src="images/blog/blog1.jpg" alt="blog love">
+                        <div class="blog__content">
+                            <span class="blog__love">
+                                Love
+                            </span>
+                            <h3 class="blog__subtitle">
+                                the single saga of gibson’s
+                            </h3>
+                            <div class="blog__text">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean com-modo ligula
+                                    eget
+                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                    montes,
+                                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
+                                    pretium
+                                    quis, sem. Nulla consequat massa quis enim.
+                                </p>
+                            </div>
+                            <div class="blog__info">
+                                <svg class="blog__svg" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20pt" height="23pt"
+                                    viewBox="0 0 20 23" version="1.1">
+                                    <path style=" stroke:none;fill-rule:nonzero;fill:#ffffff;fill-opacity:1;"
+                                        d="M 11.667969 6.980469 L 11.667969 12.730469 C 11.667969 12.964844 11.484375 13.144531 11.25 13.144531 L 7.082031 13.144531 C 6.847656 13.144531 6.667969 12.964844 6.667969 12.730469 L 6.667969 11.910156 C 6.667969 11.679688 6.847656 11.5 7.082031 11.5 L 10 11.5 L 10 6.980469 C 10 6.75 10.183594 6.570312 10.417969 6.570312 L 11.25 6.570312 C 11.484375 6.570312 11.667969 6.75 11.667969 6.980469 Z M 17.082031 11.5 C 17.082031 7.648438 13.90625 4.519531 10 4.519531 C 6.09375 4.519531 2.917969 7.648438 2.917969 11.5 C 2.917969 15.351562 6.09375 18.480469 10 18.480469 C 13.90625 18.480469 17.082031 15.351562 17.082031 11.5 Z M 20 11.5 C 20 16.941406 15.519531 21.355469 10 21.355469 C 4.480469 21.355469 0 16.941406 0 11.5 C 0 6.058594 4.480469 1.644531 10 1.644531 C 15.519531 1.644531 20 6.058594 20 11.5 Z M 20 11.5 " />
+                                </svg>
+                                <span class="sr-only">clock</span>
+                                <time class="blog__time" datetime="2020-07-23T19:01:26+03:00">23 minutes</time>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="24pt" height="24pt" viewBox="0 0 24 24" version="1.1">
+                                    <path style="stroke:none;fill-rule:nonzero;fill:#ffffff;fill-opacity:1;"
+                                        d="M 0.75 0.75 C 0.0390625 1.460938 0 1.988281 0 9.75 C 0 19.800781 -0.113281 19.5 4.425781 19.5 L 7.3125 19.460938 L 9.261719 21.636719 L 11.25 23.8125 L 13.199219 21.636719 L 15.1875 19.460938 L 18.824219 19.5 C 24.261719 19.5 24 19.988281 24 9.75 C 24 1.988281 23.960938 1.460938 23.25 0.75 C 22.539062 0.0390625 22.011719 0 12 0 C 1.988281 0 1.460938 0.0390625 0.75 0.75 Z M 21 9.75 L 21 16.5 L 14.550781 16.5 L 12.898438 18.261719 L 11.25 20.0625 L 9.601562 18.261719 C 7.949219 16.5 7.949219 16.5 5.476562 16.5 L 3 16.5 L 3 3 L 21 3 Z M 21 9.75 " />
+                                </svg>
+                                <span class="sr-only">comments</span>
+                                <div class="blog__comments">19</div>
+                            </div>
+                            <button class="blog__btn" type="button">
+                                read more
+                            </button>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <img class="blog__img" src="images/blog/blog2.jpg" alt="blog life">
+                        <span class="blog__life">
+                            <a class="blog__link link" href="#">Life</a>
+                        </span>
+                    </div>
+                </div>
+                <button class="blog__botton btn" type="button">
+                    show more
+                </button>
+            </div>
+        </section>
+
+        <footer class="footer" id="scroll-up">
+            <section class="footer-top">
+                <h2 class="sr-only">
+                    bottom of the site
+                </h2>
+                <a class="footer-top-logo link" href="#">
+                    <img class="footer-top__logo logo" src="images/logo.png" alt="logo">
+                </a>
+                <div class="footer-top__wraper">
+                    <div class="footer-top__links">
+                        <h3 class="footer-top__title">
+                            Quik Links
+                        </h3>
+                        <ul class="footer-top__items">
+                            <li>
+                                <a href="#" class="footer-top__link link">
+                                    Search
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-top__link link">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-top__link link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-top__link link">
+                                    Shipping
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-top__link link">
+                                    Terms and Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-top__contacts">
+                        <h3 class="footer-top__title">
+                            Get In Touch
+                        </h3>
+                        <a class="footer-top__link footer-top__link--margin link" href="mailto:customers@musica.com">
+                            customers@musica.com
+                        </a>
+                        <h3 class="footer-top__title">Social</h3>
+                        <ul class="footer-top__inner">
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 7 13">
+                                        <text id="facebook" class="cls-1" fill="#fff" font-family="FontAwesome"
+                                            font-size="13px" x="-0.693" y="11.778"></text>
+                                    </svg>
+                                    <span class="sr-only">facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 12 10">
+                                        <text id="twitter" class="cls-1" fill="#fff" font-family="FontAwesome"
+                                            font-size="13px" x="0.308" y="9.778"></text>
+                                    </svg>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 12 12">
+                                        <text id="linkedin" class="cls-1" fill="#fff" font-family="FontAwesome"
+                                            font-size="13px" x="0.308" y="10.778"></text>
+                                    </svg>
+                                    <span class="sr-only">Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 17 11">
+                                        <text id="google_" data-name="google" class="cls-1" fill="#fff"
+                                            font-family="FontAwesome" font-size="13px" x="0.307" y="9.778"></text>
+                                    </svg>
+                                    <span class="sr-only">google+</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top__newsletter">
+                        <h3 class="footer-top__title">
+                            Newsletter
+                        </h3>
+                        <form class="footer-top__form">
+                            <label class="sr-only" for="email">
+                                Enter your email
+                            </label>
+                            <input class="footer-top__input" id="email-input" type="email" name="email"
+                                placeholder="Your Email" required
+                                oninvalid="this.setCustomValidity('fill in this field!')">
+                            <button class="footer-top__btn" type="submit">
+                                <svg class="footer__svg" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="17"
+                                    viewBox="0 0 20 17">
+                                    <image id="send" width="20" height="17"
+                                        xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAABW0lEQVQ4jaWUTytEURjGf1NiJDTjfzNlYWFhKysbvoaV72LpOyhSIikmyUiztRKmsBYz2SgNOz169d66/5sZT91u9557fud5n/fcU5B0ApwBF8Ab/5QBO8AI8AAY/Bi47xsrqaWo2pL2Ja1LGpRELxcOSNOPpIakTUmVbqFWchuYSViP6g6oAQdAMzEaK/krxV2W3j2ONUnFLId7wAJQAqaAsjUrsXJSDcDm1oGXYLTwFySMAhNeukHngKo/230emAbGgaEYuulxHAK3ATBPw76YOV8EloFVYAUYCM2zPbwVfmGrT7qTwGUFmHWXVR+3aoohWAu4BI4sBnu5DSx5hmWfVMpxHOjJM6xFfgRJ3xkdTVNH0rWkDUljaV02h5+eU55egXMvq57zXSTUND0DO8Ap8Jgy3hXQDosbYNdPoY9uQGFgsK+sWwawsq56gcSBdmxZLrYxrcT+BfwCdYhXWkZ0abIAAAAASUVORK5CYII=" />
+                                </svg>
+                                <span class="sr-only">send message button</span>
+                            </button>
+                        </form>
+                        <div class="footer-top__copy">
+                            2017. All right reserved.
+                        </div>
+                    </div>
+                    <a class="footer-top__scroll" href="#scroll-top">
+                        <img class="footer-top__img " src="images/scroll.png" alt="scroll top">
+                    </a>
+                </div>
+            </section>
+        </footer>
+    </main>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
